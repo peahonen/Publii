@@ -139,5 +139,8 @@
   },
   "appImage": {
     "license": "license.txt"
+  },
+  "dependencies": {
+    "ssh2": "^1.12.0"
   }
 }
