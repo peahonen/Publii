@@ -366,6 +366,7 @@ class SFTP {
         }
 
         let connectionSettings = {
+	    debug: console.log,
             host: deploymentConfig.server,
             port: deploymentConfig.port,
             username: deploymentConfig.username
