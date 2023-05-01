@@ -38,6 +38,11 @@ Publii is available for Mac, Windows, and Linux and can be downloaded from our w
 
 If you want to build newest version of Publii or contribute to the Publii code, please read about [app build process](https://github.com/GetPublii/Publii/wiki/App-build-process). 
 
+First shell
+  git checkout -- . && git clean -fdx && npm install --legacy-peer-deps && ( cd app; npm install --legacy-peer-deps; electron-rebuild; ) && npm run dev
+Second shell
+  npm run prepare-editor && npm run build
+
 ## Getting Started
 You can learn more about getting started in our [User documentation](https://getpublii.com/docs/) or [Developer documentation](https://getpublii.com/dev/).
 If you have any questions or suggestions, or just need some help with using Publii, you can
